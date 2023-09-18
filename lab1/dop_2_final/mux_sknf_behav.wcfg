@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="mux_sknf_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="mux_sknf" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="2490000000fs"></ZoomStartTime>
+      <ZoomEndTime time="3150000001fs"></ZoomEndTime>
+      <Cursor1Time time="2675000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="175"></NameColumnWidth>
+      <ValueColumnWidth column_width="142"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="4" />
+   <wvobject fp_name="/mux_sknf/A" type="logic">
+      <obj_property name="ElementShortName">A</obj_property>
+      <obj_property name="ObjectShortName">A</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mux_sknf/B" type="logic">
+      <obj_property name="ElementShortName">B</obj_property>
+      <obj_property name="ObjectShortName">B</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mux_sknf/S" type="logic">
+      <obj_property name="ElementShortName">S</obj_property>
+      <obj_property name="ObjectShortName">S</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mux_sknf/Z" type="logic">
+      <obj_property name="ElementShortName">Z</obj_property>
+      <obj_property name="ObjectShortName">Z</obj_property>
+   </wvobject>
+</wave_config>

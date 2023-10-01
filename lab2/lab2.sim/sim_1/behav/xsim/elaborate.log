@@ -1,0 +1,8 @@
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto f356df0061cc4ee88f5bc8138a7890df --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_task6_behav xil_defaultlib.tb_task6 -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-718] formal port <A0> does not exist in entity <task6>.  Please compare the definition of block <task6> to its component declaration and its instantion to detect the mismatch. [D:/vivado/lab2/lab2.srcs/sim_1/new/tb_task6.vhd:30]
+ERROR: [VRFC 10-718] formal port <S0> does not exist in entity <task6>.  Please compare the definition of block <task6> to its component declaration and its instantion to detect the mismatch. [D:/vivado/lab2/lab2.srcs/sim_1/new/tb_task6.vhd:31]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit tb_task6 in library work failed.

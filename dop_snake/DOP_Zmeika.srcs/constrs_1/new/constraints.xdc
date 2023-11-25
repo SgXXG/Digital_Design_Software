@@ -1,0 +1,46 @@
+set_property IOSTANDARD LVCMOS33 [get_ports {an_o[7]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {an_o[6]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {an_o[5]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {an_o[4]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {an_o[3]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {an_o[2]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {an_o[1]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {an_o[0]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {seg_o[7]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {seg_o[6]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {seg_o[5]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {seg_o[4]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {seg_o[3]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {seg_o[2]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {seg_o[1]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {seg_o[0]}]
+set_property PACKAGE_PIN N6 [get_ports {an_o[0]}]
+set_property PACKAGE_PIN M6 [get_ports {an_o[1]}]
+set_property PACKAGE_PIN M3 [get_ports {an_o[2]}]
+set_property PACKAGE_PIN N5 [get_ports {an_o[3]}]
+set_property PACKAGE_PIN N2 [get_ports {an_o[4]}]
+set_property PACKAGE_PIN N4 [get_ports {an_o[5]}]
+set_property PACKAGE_PIN L1 [get_ports {an_o[6]}]
+set_property PACKAGE_PIN M1 [get_ports {an_o[7]}]
+set_property PACKAGE_PIN L3 [get_ports {seg_o[0]}]
+set_property PACKAGE_PIN N1 [get_ports {seg_o[1]}]
+set_property PACKAGE_PIN L5 [get_ports {seg_o[2]}]
+set_property PACKAGE_PIN L4 [get_ports {seg_o[3]}]
+set_property PACKAGE_PIN K3 [get_ports {seg_o[4]}]
+set_property PACKAGE_PIN M2 [get_ports {seg_o[5]}]
+set_property PACKAGE_PIN L6 [get_ports {seg_o[6]}]
+set_property PACKAGE_PIN M4 [get_ports {seg_o[7]}]
+
+# System Clock, 100MHz
+set_property PACKAGE_PIN E3 [get_ports clk_i]
+# The conversion of 'IOSTANDARD' constraint on 'net' object 'clk_i' has been applied to the port object 'clk_i'.
+set_property IOSTANDARD LVCMOS33 [get_ports clk_i]
+
+create_clock -name clk_i -period 10.000 [get_ports clk_i]
+# Define a new TNM for a FROM - TO constraint
+# get_false_path -from [all_fanout -endpoints_only -only_cells -flat -from [get_nets clk_i]] -to [all_fanout -endpoints_only -flat -from [get_nets Inst_VGA/pxl_clk]]
+
+# Active-Low Reset, CPU_RESET button
+set_property PACKAGE_PIN C12 [get_ports rstn_i]
+# The conversion of 'IOSTANDARD' constraint on 'net' object 'rstn_i' has been applied to the port object 'rstn_i'.
+set_property IOSTANDARD LVCMOS33 [get_ports rstn_i]
